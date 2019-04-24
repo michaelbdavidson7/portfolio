@@ -1,3 +1,11 @@
 .top-padding {
     padding-top:120px;
 }
+
+#profile-pic{
+    width:150px;
+    height:150px;
+    border-radius: 100%;
+    background: #eee no-repeat center;
+    background-size: cover;
+}
