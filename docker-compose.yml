@@ -1,0 +1,11 @@
+version: "3"
+services:
+  web:
+    image: michaelbdavidson.com
+    restart: always
+    ports:
+      - "8091:80"
+    environment:
+      - ENV_VAR=value
+    volumes:
+      - ./${DEPLOY_BRANCH:-main}:/var/www/html  # Uses the branch directory
